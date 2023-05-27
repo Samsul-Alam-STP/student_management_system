@@ -1,65 +1,97 @@
-# smwa-project
-_A simple student management web application with CRUD operations developed in Django and React Js_
+# Student Management System (React + Django)
 
-## Requirements
-Make sure you have python and Node js installed on your system:
-- [Python version 3.9.13](https://www.python.org/downloads/release/python-3913/) 
-- [Node version 16.7.1](https://nodejs.org/en/download/)
+Welcome to the Student Management System project! This repository contains the source code for a web application developed using React for the frontend and Django with Django REST Framework for the backend. 
 
+## Cloning the Repository
 
-## Project Setup
+To clone this repository and set up the project on your local machine, follow these steps:
 
-- Clone the repository in a local folder
-    ```sh
-    git clone https://github.com/fizaashraf37/smwa-project.git 
-    ```
-- Open terminal and verify python version
-  ```sh
-    python --version
-    ```
-- Verify if node and npm are installed
-  ```sh
-    node --version
-    npm -version
-    ```
-## Setup Backend
-- Nvaigate to cloned project directory
-  ```sh
-    cd smwa-project
-    ```
-- Create a python virtual environment for backend
-  ```sh
-    python3 -m venv myvenv
-    ```
-- Activate the virtual environment
-  ```sh
-  # For winodws
-    myvenv\Scripts\activate
-  # For linux
-    source myvenv/bin/activate
-    ```
-- Install python libraries
-  ```sh
-   cd backend
-   pip install -r requirements.txt
-    ```
-- Start Django server
-  ```sh
-   python manage.py runserver
-    ```
-- Django backend server will start on http://localhost:8000/
+1. Open your terminal or command prompt.
 
-## Setup Frontend
-- Open a new terminal and navigate to frontend directory
-  ```sh
-   cd smwa-project/frontend
-    ```
-- Install frontend libraries using npm
-  ```sh
-   npm install
-    ```
-- Start Node server
-  ```sh
-   npm start
-    ```
-- Once node is started you can access the application on http://localhost:3000/
+2. Navigate to the directory where you want to clone the repository.
+
+3. Run the following command to clone the repository:
+
+```shell
+git clone https://github.com/your-username/student-management-system.git
+```
+
+4. Once the cloning process is complete, navigate to the project's root directory:
+
+```shell
+cd student-management-system
+```
+
+## Backend Setup
+
+To set up the backend Django server and install the required dependencies, follow these steps:
+
+1. Create a virtual environment (optional but recommended) to isolate project dependencies:
+
+```shell
+python3 -m venv myenv
+```
+
+2. Activate the virtual environment:
+
+   - For Windows:
+
+   ```shell
+   myenv\Scripts\activate
+   ```
+
+   - For macOS/Linux:
+
+   ```shell
+   source myenv/bin/activate
+   ```
+
+3. Install the project dependencies using the `pip` package manager:
+
+```shell
+pip install -r requirements.txt
+```
+
+4. Set up the database by applying migrations:
+
+```shell
+python manage.py migrate
+```
+
+5. Start the Django development server:
+
+```shell
+python manage.py runserver
+```
+
+The backend server should now be running at [http://localhost:8000](http://localhost:8000).
+
+## Frontend Setup
+
+To set up the React frontend and install the required dependencies, follow these steps:
+
+1. Open a new terminal or command prompt (while keeping the backend server running).
+
+2. Navigate to the `frontend` directory:
+
+```shell
+cd frontend
+```
+
+3. Install the project dependencies using npm:
+
+```shell
+npm install
+```
+
+4. Start the React development server:
+
+```shell
+npm start
+```
+
+The frontend server should now be running at [http://localhost:3000](http://localhost:3000), and you can access the Student Management System in your web browser.
+
+## Contributing
+
+Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue on the repository.
